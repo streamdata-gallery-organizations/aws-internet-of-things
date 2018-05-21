@@ -1,11 +1,12 @@
 ---
 name: AWS Internet of Things
+x-slug: aws-internet-of-things
 description: AWS IoT is a managed cloud platform that lets connected devices easily
   and securely interact with cloud applications and other devices. AWS IoT can support
   billions of devices and trillions of messages, and can process and route those messages
   to AWS endpoints and to other devices reliably and securely. With AWS IoT, your
   applications can keep track of and communicate with all your devices, all the time,
-  even when they arenrsquo;t connected.nAWS IoT makes it easy to use AWS services
+  even when they aren&rsquo;t connected.AWS IoT makes it easy to use AWS services
   like AWS Lambda, Amazon Kinesis, Amazon S3, Amazon Machine Learning, Amazon DynamoDB,
   Amazon CloudWatch, AWS CloudTrail, and Amazon Elasticsearch Service with built-in
   Kibana integration, to build IoT applications that gather, process, analyze and
@@ -13,30 +14,617 @@ description: AWS IoT is a managed cloud platform that lets connected devices eas
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
 x-kinRank: "10"
 x-alexaRank: ""
-tags:
-- Stack Network
-- Internet of Things
-- Devices
-- Amazon Web Services
-created: "2018-03-24"
-modified: "2018-03-24"
-url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/apis.yaml
+tags: AWS Internet of Things
+created: "2018-05-20"
+modified: "2018-05-20"
+url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Internet of Things API
-  description: AWS IoT is a managed cloud platform that lets connected devices easily
-    and securely interact with cloud applications and other devices
+- name: AWS Internet of Things API Accept Certificate Transfer
+  x-api-slug: aws-internet-of-things-api
+  description: Accepts a pending certificate transfer.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
-  humanURL: ""
-  baseURL: :///
-  tags:
-  - Stack Network
-  - Internet of Things
-  - Devices
-  - Amazon Web Services
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=AcceptCertificateTransfer
+  tags: Certificate Transfers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/action-updatething-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionacceptcertificatetransfer-get-openapi.md
+- name: AWS Internet of Things API Attach Principal Policy
+  x-api-slug: aws-internet-of-things-api
+  description: Attaches the specified policy to the specified principal (certificate
+    or other credential).
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=AttachPrincipalPolicy
+  tags: Principal Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionattachprincipalpolicy-get-openapi.md
+- name: AWS Internet of Things API Attach Thing Principal
+  x-api-slug: aws-internet-of-things-api
+  description: Attaches the specified principal to the specified thing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=AttachThingPrincipal
+  tags: Thing Principals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionattachthingprincipal-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionattachthingprincipal-get-openapi.md
+- name: AWS Internet of Things API Cancel Certificate Transfer
+  x-api-slug: aws-internet-of-things-api
+  description: Cancels a pending transfer for the specified certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CancelCertificateTransfer
+  tags: Certificate Transfers
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncancelcertificatetransfer-get-openapi.md
+- name: AWS Internet of Things API Create Certificate From Csr
+  x-api-slug: aws-internet-of-things-api
+  description: Creates an X.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreateCertificateFromCsr
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatecertificatefromcsr-get-openapi.md
+- name: AWS Internet of Things API Create Keys And Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Creates a 2048-bit RSA key pair and issues an X.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreateKeysAndCertificate
+  tags: Keys And Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatekeysandcertificate-get-openapi.md
+- name: AWS Internet of Things API Create Policy
+  x-api-slug: aws-internet-of-things-api
+  description: Creates an AWS IoT policy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreatePolicy
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatepolicy-get-openapi.md
+- name: AWS Internet of Things API Create Policy Version
+  x-api-slug: aws-internet-of-things-api
+  description: Creates a new version of the specified AWS IoT policy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreatePolicyVersion
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatepolicyversion-get-openapi.md
+- name: AWS Internet of Things API Create Thing
+  x-api-slug: aws-internet-of-things-api
+  description: Creates a thing record in the thing registry.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreateThing
+  tags: Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatething-get-openapi.md
+- name: AWS Internet of Things API Create Thing Type
+  x-api-slug: aws-internet-of-things-api
+  description: Creates a new thing type.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreateThingType
+  tags: Thing Types
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatethingtype-get-openapi.md
+- name: AWS Internet of Things API Create Topic Rule
+  x-api-slug: aws-internet-of-things-api
+  description: Creates a rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=CreateTopicRule
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actioncreatetopicrule-get-openapi.md
+- name: AWS Internet of Things API Delete C A Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes a registered CA certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeleteCACertificate
+  tags: CA Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletecacertificate-get-openapi.md
+- name: AWS Internet of Things API Delete Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes the specified certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeleteCertificate
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletecertificate-get-openapi.md
+- name: AWS Internet of Things API Delete Policy
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes the specified policy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeletePolicy
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletepolicy-get-openapi.md
+- name: AWS Internet of Things API Delete Policy Version
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes the specified version of the specified policy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeletePolicyVersion
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletepolicyversion-get-openapi.md
+- name: AWS Internet of Things API Delete Registration Code
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes a CA certificate registration code.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeleteRegistrationCode
+  tags: Registration Codes
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeleteregistrationcode-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeleteregistrationcode-get-openapi.md
+- name: AWS Internet of Things API Delete Thing
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes the specified thing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeleteThing
+  tags: Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletething-get-openapi.md
+- name: AWS Internet of Things API Delete Thing Type
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes the specified thing type.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeleteThingType
+  tags: Thing Types
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletethingtype-get-openapi.md
+- name: AWS Internet of Things API Delete Topic Rule
+  x-api-slug: aws-internet-of-things-api
+  description: Deletes the specified rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeleteTopicRule
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeletetopicrule-get-openapi.md
+- name: AWS Internet of Things API Deprecate Thing Type
+  x-api-slug: aws-internet-of-things-api
+  description: Deprecates a thing type.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DeprecateThingType
+  tags: Thing Types
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondeprecatethingtype-get-openapi.md
+- name: AWS Internet of Things API Describe C A Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Describes a registered CA certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DescribeCACertificate
+  tags: CA Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondescribecacertificate-get-openapi.md
+- name: AWS Internet of Things API Describe Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Gets information about the specified certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DescribeCertificate
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondescribecertificate-get-openapi.md
+- name: AWS Internet of Things API Describe Endpoint
+  x-api-slug: aws-internet-of-things-api
+  description: Returns a unique endpoint specific to the AWS account making the call.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DescribeEndpoint
+  tags: Endpoints
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondescribeendpoint-get-openapi.md
+- name: AWS Internet of Things API Describe Thing
+  x-api-slug: aws-internet-of-things-api
+  description: Gets information about the specified thing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DescribeThing
+  tags: Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondescribething-get-openapi.md
+- name: AWS Internet of Things API Describe Thing Type
+  x-api-slug: aws-internet-of-things-api
+  description: Gets information about the specified thing type.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DescribeThingType
+  tags: Thing Types
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondescribethingtype-get-openapi.md
+- name: AWS Internet of Things API Detach Principal Policy
+  x-api-slug: aws-internet-of-things-api
+  description: Removes the specified policy from the specified certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DetachPrincipalPolicy
+  tags: Principal Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondetachprincipalpolicy-get-openapi.md
+- name: AWS Internet of Things API Detach Thing Principal
+  x-api-slug: aws-internet-of-things-api
+  description: Detaches the specified principal from the specified thing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DetachThingPrincipal
+  tags: Thing Principals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondetachthingprincipal-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondetachthingprincipal-get-openapi.md
+- name: AWS Internet of Things API Disable Topic Rule
+  x-api-slug: aws-internet-of-things-api
+  description: Disables the specified rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=DisableTopicRule
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiondisabletopicrule-get-openapi.md
+- name: AWS Internet of Things API Enable Topic Rule
+  x-api-slug: aws-internet-of-things-api
+  description: Enables the specified rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=EnableTopicRule
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionenabletopicrule-get-openapi.md
+- name: AWS Internet of Things API Get Logging Options
+  x-api-slug: aws-internet-of-things-api
+  description: Gets the logging options.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=GetLoggingOptions
+  tags: Logging Options
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiongetloggingoptions-get-openapi.md
+- name: AWS Internet of Things API Get Policy
+  x-api-slug: aws-internet-of-things-api
+  description: Gets information about the specified policy with the policy document
+    of the default version.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=GetPolicy
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiongetpolicy-get-openapi.md
+- name: AWS Internet of Things API Get Policy Version
+  x-api-slug: aws-internet-of-things-api
+  description: Gets information about the specified policy version.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=GetPolicyVersion
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiongetpolicyversion-get-openapi.md
+- name: AWS Internet of Things API Get Registration Code
+  x-api-slug: aws-internet-of-things-api
+  description: Gets a registration code used to register a CA certificate with AWS
+    IoT.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=GetRegistrationCode
+  tags: Registration Codes
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiongetregistrationcode-get-openapi.md
+- name: AWS Internet of Things API Get Topic Rule
+  x-api-slug: aws-internet-of-things-api
+  description: Gets information about the specified rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=GetTopicRule
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiongettopicrule-get-openapi.md
+- name: AWS Internet of Things API List C A Certificates
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the CA certificates registered for your AWS account.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListCACertificates
+  tags: CA Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistcacertificates-get-openapi.md
+- name: AWS Internet of Things API List Certificates
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the certificates registered in your AWS account.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListCertificates
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistcertificates-get-openapi.md
+- name: AWS Internet of Things API List Certificates By C A
+  x-api-slug: aws-internet-of-things-api
+  description: List the device certificates signed by the specified CA certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListCertificatesByCA
+  tags: CA Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistcertificatesbyca-get-openapi.md
+- name: AWS Internet of Things API List Outgoing Certificates
+  x-api-slug: aws-internet-of-things-api
+  description: Lists certificates that are being transfered but not yet accepted.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListOutgoingCertificates
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistoutgoingcertificates-get-openapi.md
+- name: AWS Internet of Things API List Policies
+  x-api-slug: aws-internet-of-things-api
+  description: Lists your policies.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListPolicies
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistpolicies-get-openapi.md
+- name: AWS Internet of Things API List Policy Principals
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the principals associated with the specified policy.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListPolicyPrincipals
+  tags: Policy Principals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistpolicyprincipals-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistpolicyprincipals-get-openapi.md
+- name: AWS Internet of Things API List Policy Versions
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the versions of the specified policy and identifies the default
+    version.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListPolicyVersions
+  tags: 'Policy Versions '
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistpolicyversions-get-openapi.md
+- name: AWS Internet of Things API List Principal Policies
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the policies attached to the specified principal.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListPrincipalPolicies
+  tags: 'Principal Policies '
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistprincipalpolicies-get-openapi.md
+- name: AWS Internet of Things API List Principal Things
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the things associated with the specified principal.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListPrincipalThings
+  tags: Principal Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistprincipalthings-get-openapi.md
+- name: AWS Internet of Things API List Thing Principals
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the principals associated with the specified thing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListThingPrincipals
+  tags: Thing Principals
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistthingprincipals-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistthingprincipals-get-openapi.md
+- name: AWS Internet of Things API List Things
+  x-api-slug: aws-internet-of-things-api
+  description: Lists your things.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListThings
+  tags: Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistthings-get-openapi.md
+- name: AWS Internet of Things API List Thing Types
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the existing thing types.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListThingTypes
+  tags: Thing Types
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlistthingtypes-get-openapi.md
+- name: AWS Internet of Things API List Topic Rules
+  x-api-slug: aws-internet-of-things-api
+  description: Lists the rules for the specific topic.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ListTopicRules
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionlisttopicrules-get-openapi.md
+- name: AWS Internet of Things API Register C A Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Registers a CA certificate with AWS IoT.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=RegisterCACertificate
+  tags: CA Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionregistercacertificate-get-openapi.md
+- name: AWS Internet of Things API Register Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Registers a device certificate with AWS IoT.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=RegisterCertificate
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionregistercertificate-get-openapi.md
+- name: AWS Internet of Things API Reject Certificate Transfer
+  x-api-slug: aws-internet-of-things-api
+  description: Rejects a pending certificate transfer.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=RejectCertificateTransfer
+  tags: Certificate Transfers
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionrejectcertificatetransfer-get-openapi.md
+- name: AWS Internet of Things API Replace Topic Rule
+  x-api-slug: aws-internet-of-things-api
+  description: Replaces the specified rule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=ReplaceTopicRule
+  tags: Topic Rules
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionreplacetopicrule-get-openapi.md
+- name: AWS Internet of Things API Set Default Policy Version
+  x-api-slug: aws-internet-of-things-api
+  description: Sets the specified version of the specified policy as the policy's
+    default (operative) version.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=SetDefaultPolicyVersion
+  tags: Policies
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionsetdefaultpolicyversion-get-openapi.md
+- name: AWS Internet of Things API Set Logging Options
+  x-api-slug: aws-internet-of-things-api
+  description: Sets the logging options.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=SetLoggingOptions
+  tags: Logging
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionsetloggingoptions-get-openapi.md
+- name: AWS Internet of Things API Transfer Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Transfers the specified certificate to the specified AWS account.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=TransferCertificate
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actiontransfercertificate-get-openapi.md
+- name: AWS Internet of Things API Update C A Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Updates a registered CA certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=UpdateCACertificate
+  tags: CA Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionupdatecacertificate-get-openapi.md
+- name: AWS Internet of Things API Update Certificate
+  x-api-slug: aws-internet-of-things-api
+  description: Updates the status of the specified certificate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=UpdateCertificate
+  tags: Certificates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionupdatecertificate-get-openapi.md
+- name: AWS Internet of Things API Update Thing
+  x-api-slug: aws-internet-of-things-api
+  description: Updates the data for a thing.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: ://///?Action=UpdateThing
+  tags: Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/actionupdatething-get-openapi.md
+- name: AWS Internet of Things API
+  x-api-slug: aws-internet-of-things-api
+  description: AWS IoT is a managed cloud platform that lets connected devices easily
+    and securely interact with cloud applications and other devices. AWS IoT can support
+    billions of devices and trillions of messages, and can process and route those
+    messages to AWS endpoints and to other devices reliably and securely. With AWS
+    IoT, your applications can keep track of and communicate with all your devices,
+    all the time, even when they aren&rsquo;t connected.AWS IoT makes it easy to use
+    AWS services like AWS Lambda, Amazon Kinesis, Amazon S3, Amazon Machine Learning,
+    Amazon DynamoDB, Amazon CloudWatch, AWS CloudTrail, and Amazon Elasticsearch Service
+    with built-in Kibana integration, to build IoT applications that gather, process,
+    analyze and act on data generated by connected devices, without having to manage
+    any infrastructure.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Internet-Of-Things_AWSIoT.png
+  humanURL: https://aws.amazon.com/iot-platform/
+  baseURL: :///
+  tags: AWS Internet of Things
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/aws-internet-of-things/master/_listings/aws-internet-of-things/openapi.md
 x-common:
 - type: x-blog
   url: https://aws.amazon.com/iot-platform/developer-resources/#Blog
